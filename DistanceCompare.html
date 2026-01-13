@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>카카오맵 길찾기 좌/우 비교 (목동역 → 웰리힐리파크, 자동차)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; height:100vh; padding:12px; box-sizing:border-box; }
+    header { font-weight:600; font-size:14px; padding:8px 10px; border:1px solid #ddd; border-radius:8px 8px 0 0; background:#f7f7f7; }
+    iframe { flex:1; border:1px solid #ddd; border-radius:0 0 8px 8px; width:100%; height:calc(100% - 44px); background:#fff; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns:1fr; height:auto; }
+      iframe { height:70vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <section>
+      <header>좌: 목동역 → 웰리힐리파크 (자동차)</header>
+      <iframe
+        src="https://m.map.kakao.com/scheme/route?sp=37.52611,126.86472&ep=37.49056,128.25056&by=car"
+        allow="geolocation">
+      </iframe>
+    </section>
+
+    <section>
+      <header>우: 목동역 → 웰리힐리파크 (자동차)</header>
+      <iframe
+        src="https://m.map.kakao.com/scheme/route?sp=37.52611,126.86472&ep=37.49056,128.25056&by=car"
+        allow="geolocation">
+      </iframe>
+    </section>
+  </div>
+</body>
+</html>
+
